@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+
+}
+
+.NavBarLogo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.NavBarList{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.NavBarList li{
+    list-style: none;
+}
+.NavBarList a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+/* everything after the navbar */
+.wrapper{
+    width: 100%;
+
+}
+
+.img-info{
+    width: 100%;
+}
+
+.img-info h2 {
+    padding: 30px 30px 20px;
+    font-family: arial;
+    font-size: 50px;
+    line-height: 44px;
+}
+
+.img-info p {
+    padding: 30px 30px 20px;
+    font-family: arial;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.my-photo{
+    width: 100%;
+}
+
+/* Tablet mode*/
+@media screen and (max-width:1024px){
+    .NavBarList{
+        width: 60%;
+    }
+
+    /* changing everything after the nav bar for the tablet*/
+
+    .wrapper{
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .img-info h2 {
+        padding: 20px 0px 0px;
+        line-height: 44px;
+    }
+
+    .img-info p {
+        padding: 20px 0px 0px;
+    }
+
+    .my-photo{
+        padding-top: 30px;
+    }
+}
+
+
+
+/* Phone mode*/
+@media  screen and (max-width: 896px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .wrapper{
+        width: 100%;
+    }
+
+
+
+
+
+    .NavBarList{
+        overflow-x: hidden;
+    }
+    .NavBarList{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .NavBarList li{
+       opacity: 0;
+
+
+    }
+
+    .burger{
+        display: block;
+    }
+
+
+    
+}
+
+/* Desktop mode*/
+@media only screen and (min-width: 1000px){
+    .wrapper{
+        width: 1000px;
+        padding-left: 30px;
+        padding-top: 30px;
+
+    }
+    .img-info{
+        width: 50%;
+        float: right;
+    }
+    .img-info h2 {
+        padding: 20px 0px 0px 30px;
+    }
+
+
+    .img-info p {
+        padding: 20px 0px 0px 30px;
+    }
+
+    .my-photo{
+        padding-top: 0;
+        width: 50%;
+        float: left;
+
+    }
+
+
+
+}
+
+
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes NavLinktransitions{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+

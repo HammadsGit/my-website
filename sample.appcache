@@ -1,0 +1,11 @@
+CACHE MANIFEST
+ /style.css
+ /index.html
+ /logo.gif
+ /main.js
+
+ NETWORK:
+ login.php
+
+ FALLBACK:
+ /html/ /index.html

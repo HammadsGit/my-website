@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" manifest="sample.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link  rel="stylesheet" href="contactform.css">
+    <script src="Visitors.js"></script>
+
+
+
+    <title>My Website</title>
+</head>
+<body>
+<nav>
+    <div class="NavBarLogo">
+        <h4 >Hammad</h4>
+    </div>
+    <ul class="NavBarList">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="#">Experiences</a></li>
+        <li><a href="Game.html">Games</a></li>
+        <li><a href="Contacts.html">Contact</a></li>
+        <li><a href="Login.html">Login</a></li>
+
+
+    </ul>
+    <div class="burger">
+        <div class="burgerline1"></div>
+        <div class="burgerline2"></div>
+        <div class="burgerline3"></div>
+    </div>
+</nav>
+<script src="app.js"></script>
+
+
+<div class="wrapper">
+    <article class="img-info">
+        <h2>Contact Me</h2>
+        <div class="container">
+            <form action="https://formsubmit.co/hammadshahid734@gmail.com" method="POST">
+                <h3>GET IN TOUCH</h3>
+                <input type="hidden" name="_subject" value="New email from website.">
+                <label for="name"></label><input type="text" name="name" id="name" placeholder="Your Name" required>
+                <label for="email"></label><input type="email" name="email" id="email" placeholder="Email Address" required>
+                <label for="phone"></label><input type="text" id="phone" placeholder="Phone no" required>
+                <label for="message"></label><textarea name="textarea" id="message" cols="30" rows="4" placeholder="Write your message here."></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </article>
+</div>
+
+
+
+</body>
+</html>
